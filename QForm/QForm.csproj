@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB5FB7A1-70F9-4AED-8B46-49A7F84E9C50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QForm</RootNamespace>
+    <AssemblyName>QForm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SysSetting.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonClose.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButtonClose.Designer.cs">
+      <DependentUpon>ButtonClose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSysSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSysSetting.Designer.cs">
+      <DependentUpon>FormSysSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IconBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IconBar.Designer.cs">
+      <DependentUpon>IconBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IconButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IconButton.Designer.cs">
+      <DependentUpon>IconButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MTextBox.Designer.cs">
+      <DependentUpon>MTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavigationBar.Designer.cs">
+      <DependentUpon>NavigationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavigationBar2.Designer.cs">
+      <DependentUpon>NavigationBar2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavigationBar3.Designer.cs">
+      <DependentUpon>NavigationBar3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavigationButton.designer.cs">
+      <DependentUpon>NavigationButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ButtonClose.resx">
+      <DependentUpon>ButtonClose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSysSetting.resx">
+      <DependentUpon>FormSysSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IconBar.resx">
+      <DependentUpon>IconBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IconButton.resx">
+      <DependentUpon>IconButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationBar.resx">
+      <DependentUpon>NavigationBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationBar2.resx">
+      <DependentUpon>NavigationBar2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationBar3.resx">
+      <DependentUpon>NavigationBar3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationButton.resx">
+      <DependentUpon>NavigationButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon\1.ico" />
+    <Content Include="Icon\2.ico" />
+    <Content Include="Icon\3.ico" />
+    <Content Include="SysSetting.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
